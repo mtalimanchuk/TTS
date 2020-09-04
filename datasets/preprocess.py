@@ -163,7 +163,7 @@ def common_voice(root_path, meta_file):
             cols = line.split("\t")
             text = cols[2]
             speaker_name = cols[0]
-            wav_file = os.path.join(root_path, "clips", cols[1] + ".wav")
+            wav_file = os.path.join(root_path, "clips", cols[1])
             items.append([text, wav_file, speaker_name])
     return items
 
